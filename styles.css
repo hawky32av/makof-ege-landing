@@ -296,3 +296,77 @@ section .button {
     display: block;
   }
 }
+
+
+/* Student cases: horizontally scrollable proof cards */
+.cases-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 0 16px;
+  margin-top: 28px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  overscroll-behavior-inline: contain;
+}
+
+.case-card {
+  flex: 0 0 min(72vw, 420px);
+  scroll-snap-align: start;
+  border-top: 1px solid #ddd;
+  padding-top: 18px;
+}
+
+.case-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.case-card p {
+  margin: 8px 0;
+}
+
+.case-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.case-proof-grid .placeholder {
+  min-height: 150px;
+  margin: 0;
+  padding: 16px;
+}
+
+.cases-hint {
+  margin-top: 0;
+}
+
+.process-steps {
+  margin-top: 28px;
+}
+
+.process-steps > li {
+  margin-bottom: 28px;
+}
+
+@media (min-width: 801px) {
+  .case-card {
+    flex-basis: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-card {
+    flex-basis: 88vw;
+  }
+
+  .case-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-proof-grid .placeholder {
+    min-height: 120px;
+  }
+}
