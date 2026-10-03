@@ -144,3 +144,73 @@ small {
     font-size: 24px;
   }
 }
+
+
+/* Basic layout alignment only */
+.inner {
+  width: min(calc(100% - 40px), 900px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section .inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section h1,
+section h2,
+section h3,
+section p,
+section ul,
+section ol,
+section .placeholder,
+section .block,
+section .alfa-wrap {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section p,
+section ul,
+section ol {
+  max-width: 720px;
+}
+
+section .button {
+  width: auto;
+}
+
+.alfa-wrap {
+  width: min(100%, 620px);
+  margin-top: 28px;
+}
+
+.alfa-frame {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  border: 0;
+}
+
+.alfa-fallback {
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .inner {
+    width: min(calc(100% - 24px), 900px);
+  }
+
+  .alfa-wrap {
+    width: 100%;
+  }
+
+  .alfa-frame {
+    min-height: 560px;
+  }
+
+  nav {
+    gap: 10px 14px;
+  }
+}
