@@ -214,3 +214,24 @@ section .button {
     gap: 10px 14px;
   }
 }
+
+
+/* Original image placeholders: no decorative treatment */
+.document-image,
+.book-image {
+  display: block;
+  width: min(100%, 720px);
+  margin-top: 16px;
+}
+
+.document-image img,
+.book-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.book-image {
+  width: min(100%, 420px);
+}
