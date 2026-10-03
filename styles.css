@@ -220,18 +220,27 @@ section .button {
 .document-image,
 .book-image {
   display: block;
-  width: min(100%, 720px);
+  width: fit-content;
+  max-width: 100%;
   margin-top: 16px;
 }
 
-.document-image img,
-.book-image img {
+.document-image img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: min(100%, 520px);
+  max-height: 320px;
   height: auto;
+  object-fit: contain;
   border: 0;
 }
 
-.book-image {
-  width: min(100%, 420px);
+.book-image img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 260px);
+  max-height: 360px;
+  height: auto;
+  object-fit: contain;
+  border: 0;
 }
