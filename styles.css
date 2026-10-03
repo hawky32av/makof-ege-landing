@@ -244,3 +244,55 @@ section .button {
   object-fit: contain;
   border: 0;
 }
+
+
+/* Trust proofs: three columns on desktop, stacked on mobile */
+@media (min-width: 801px) {
+  #about .block {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+  }
+
+  #about .item {
+    min-width: 0;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+  }
+
+  #about .item:first-child {
+    border-top: 1px solid #ddd;
+  }
+
+  #about .item h3 {
+    min-height: 48px;
+  }
+
+  #about .item p {
+    min-height: 66px;
+  }
+
+  #about .document-image,
+  #about .book-image {
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  #about .document-image img,
+  #about .book-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 210px;
+    max-height: none;
+    object-fit: contain;
+    object-position: left top;
+  }
+}
+
+@media (max-width: 800px) {
+  #about .block {
+    display: block;
+  }
+}
