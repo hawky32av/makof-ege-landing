@@ -1,306 +1,223 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Подготовка к ЕГЭ по информатике с Дмитрием Маковым. Понятные объяснения, самостоятельное решение задач, Python с нуля и реальные результаты учеников." />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Дмитрий Маков — подготовка к ЕГЭ по информатике</title>
-
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Подготовка к ЕГЭ по информатике с Дмитрием Маковым.">
+  <title>Дмитрий Маков — ЕГЭ по информатике</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">К содержанию</a>
 
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Дмитрий Маков — наверх">
-        <span class="brand-mark" aria-hidden="true">ДМ</span>
-        <span class="brand-copy">
-          <strong>Дмитрий Маков</strong>
-          <span>ЕГЭ по информатике</span>
-        </span>
-      </a>
+<header class="site-header">
+  <div class="inner">
+    <strong>Дмитрий Маков</strong>
+    <div>Подготовка к ЕГЭ по информатике</div>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#results">Результаты</a>
+      <a href="#process">Как проходят занятия</a>
+      <a href="#contact">Обсудить подготовку</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="nav" aria-label="Навигация">
-        <a href="#about">Обо мне</a>
-        <a href="#results">Результаты</a>
-        <a href="#process">Занятия</a>
-      </nav>
+<main>
 
-      <button class="button button--compact js-open-contact" type="button">Обсудить подготовку</button>
+  <section id="hero">
+    <div class="inner">
+      <div>ЕГЭ по информатике · 10–11 класс</div>
+
+      <h1>Подготовка к ЕГЭ по информатике</h1>
+
+      <p>
+        Разбираем темы до понятной логики, учимся решать задачи самостоятельно,
+        возвращаемся к ошибкам и постепенно собираем весь экзамен.
+        Python можно начать с нуля.
+      </p>
+
+      <ul>
+        <li>Высшее педагогическое образование ИТМО.</li>
+        <li>Прошёл подготовку экспертов ЕГЭ в ФИПИ.</li>
+        <li>Автор учебника по Python для ЕГЭ.</li>
+        <li>Средний результат учеников на ЕГЭ-2026 — 81 балл.</li>
+      </ul>
+
+      <a class="button" href="#contact">Обсудить подготовку</a>
+
+      <p><small>Сначала просто поговорим о текущем уровне и цели. Это не запись на урок.</small></p>
+
+      <div class="placeholder">Место для фотографии преподавателя</div>
     </div>
-  </header>
+  </section>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">ЕГЭ по информатике · 10–11 класс</p>
-          <h1>Не запоминать решения.<br><span>Научиться решать.</span></h1>
-          <p class="hero-lead">Разбираем тему до понятной логики, закрепляем её самостоятельно и возвращаемся к ошибкам, пока они не перестают повторяться. Python можно начать с нуля.</p>
+  <section id="about">
+    <div class="inner">
+      <h2>Обо мне</h2>
 
-          <div class="hero-actions">
-            <button class="button button--primary js-open-contact" type="button">Обсудить подготовку</button>
-            <span>Сначала просто поговорим о текущем уровне и цели.</span>
-          </div>
+      <p>
+        Я Дмитрий Маков. Преподаю информатику и программирование с 2019 года.
+        В подготовке мне важно не дать ученику готовый шаблон, а понять,
+        где именно теряется логика решения.
+      </p>
 
-          <ul class="hero-facts" aria-label="Ключевые факты">
-            <li><strong>ИТМО</strong><span>высшее педагогическое образование</span></li>
-            <li><strong>ФИПИ</strong><span>прошёл подготовку экспертов ЕГЭ</span></li>
-            <li><strong>Python</strong><span>можно начать с нуля</span></li>
-          </ul>
+      <div class="block">
+        <div class="item">
+          <h3>Высшее педагогическое образование — Университет ИТМО</h3>
+          <p>Бакалавриат по педагогическому направлению.</p>
+          <button class="button" type="button">Открыть диплом</button>
+          <div class="placeholder">Место для скана диплома</div>
         </div>
 
-        <div class="hero-panel" aria-label="Результаты учеников">
-          <div class="panel-topline">
-            <span>ЕГЭ-2026</span>
-            <span>реальные результаты</span>
-          </div>
-          <div class="score-display">
-            <strong>81</strong>
-            <span>средний балл<br>моих учеников</span>
-          </div>
-          <div class="score-scale" aria-hidden="true">
-            <span style="--v: 100">100</span>
-            <span style="--v: 93">93</span>
-            <span style="--v: 90">90</span>
-            <span style="--v: 85">85</span>
-            <span style="--v: 80">80</span>
-            <span style="--v: 75">75</span>
-            <span style="--v: 72">72</span>
-            <span style="--v: 54">54</span>
-          </div>
-          <p class="panel-note">Лучший результат — <strong>100 баллов</strong>. Все ученики поступили в вуз.</p>
+        <div class="item">
+          <h3>Подготовка экспертов ЕГЭ в ФИПИ</h3>
+          <p>Прошёл обучение по подготовке экспертов предметной комиссии по информатике.</p>
+          <button class="button" type="button">Открыть удостоверение</button>
+          <div class="placeholder">Место для удостоверения</div>
+        </div>
+
+        <div class="item">
+          <h3>Авторский учебник по Python</h3>
+          <p>«Основы программирования для ЕГЭ: Python 3 с нуля».</p>
+          <button class="button" type="button">Посмотреть учебник</button>
+          <div class="placeholder">Место для обложки и примера страницы</div>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="shell">
-        <div class="section-head">
-          <p class="eyebrow">Обо мне</p>
-          <h2>Сначала понять человека.<br>Потом строить подготовку.</h2>
-          <p>Преподаю информатику и программирование с 2019 года. Моя задача — быстро найти место, где ученик перестаёт понимать решение, и сделать его понятным.</p>
-        </div>
-
-        <div class="evidence-grid">
-          <article class="evidence-card evidence-card--intro">
-            <div class="teacher-placeholder" aria-label="Место для фотографии преподавателя">
-              <span>ДМ</span>
-            </div>
-            <div>
-              <h3>Дмитрий Маков</h3>
-              <p>Преподаватель ЕГЭ по информатике и Python. На занятиях много самостоятельного решения и разбора конкретных ошибок.</p>
-            </div>
-          </article>
-
-          <article class="evidence-card">
-            <span class="card-number">01</span>
-            <div>
-              <h3>Педагогическое образование ИТМО</h3>
-              <p>Высшее образование по педагогическому направлению.</p>
-              <button class="text-action" type="button" disabled>Скан документа добавим</button>
-            </div>
-          </article>
-
-          <article class="evidence-card">
-            <span class="card-number">02</span>
-            <div>
-              <h3>Подготовка экспертов ЕГЭ в ФИПИ</h3>
-              <p>Формулировка без преувеличений: обучение экспертов, а не заявление о работе в комиссии.</p>
-              <button class="text-action" type="button" disabled>Удостоверение добавим</button>
-            </div>
-          </article>
-
-          <article class="evidence-card evidence-card--book">
-            <span class="card-number">03</span>
-            <div class="book-mock" aria-hidden="true">
-              <span>PYTHON 3</span>
-              <strong>с нуля<br>для ЕГЭ</strong>
-              <small>Дмитрий Маков</small>
-            </div>
-            <div>
-              <h3>Авторский учебник по Python</h3>
-              <p>База программирования, которая нужна для ЕГЭ: последовательно, без скачков и лишней теории.</p>
-              <button class="text-action" type="button" disabled>Обложку и страницу добавим</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--ink" id="results">
-      <div class="shell">
-        <div class="section-head section-head--light">
-          <p class="eyebrow">Результаты</p>
-          <h2>Цель у всех разная.<br>Прогресс должен быть измеримым.</h2>
-          <p>Показываю не абстрактные обещания, а результаты учеников на ЕГЭ-2026. Истории старта и сроки подготовки добавим только там, где они подтверждены.</p>
-        </div>
-
-        <div class="result-grid">
-          <article class="result-card result-card--accent">
-            <span class="result-label">Максимум</span>
-            <strong>100</strong>
-            <p>баллов на ЕГЭ-2026</p>
-          </article>
-          <article class="result-card">
-            <span class="result-label">Высокий результат</span>
-            <strong>90</strong>
-            <p>баллов на ЕГЭ-2026</p>
-          </article>
-          <article class="result-card">
-            <span class="result-label">По группе</span>
-            <strong>81</strong>
-            <p>средний балл учеников</p>
-          </article>
-          <article class="result-card">
-            <span class="result-label">После экзамена</span>
-            <strong>100%</strong>
-            <p>учеников поступили в вуз</p>
-          </article>
-        </div>
-
-        <div class="results-cta">
-          <p>Чтобы понять реалистичную цель, сначала смотрим текущую базу и то, сколько времени осталось до экзамена.</p>
-          <button class="button button--light js-open-contact" type="button">Обсудить свою ситуацию</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="shell">
-        <div class="section-head">
-          <p class="eyebrow">Как проходят занятия</p>
-          <h2>Тема не заканчивается<br>в момент окончания урока.</h2>
-          <p>Подготовка строится как цикл: понять → попробовать самому → получить помощь → закрепить. Видео дополняет описание, но без него всё должно быть понятно.</p>
-        </div>
-
-        <div class="process-layout">
-          <ol class="process-list">
-            <li>
-              <span>01</span>
-              <div><h3>Разбираем тему</h3><p>На понятных примерах и задачах экзамена.</p></div>
-            </li>
-            <li>
-              <span>02</span>
-              <div><h3>Решаем самостоятельно</h3><p>После объяснения ученик пробует сделать похожее без подсказки.</p></div>
-            </li>
-            <li>
-              <span>03</span>
-              <div><h3>Помогаем между занятиями</h3><p>Если задача застопорилась, вопрос не нужно хранить до следующей недели.</p></div>
-            </li>
-            <li>
-              <span>04</span>
-              <div><h3>Возвращаемся к ошибкам</h3><p>Пробники и домашняя работа показывают, что уже держится, а что нужно повторить.</p></div>
-            </li>
-          </ol>
-
-          <div class="lesson-preview">
-            <div class="video-placeholder">
-              <button type="button" disabled aria-label="Видео будет подключено позже">
-                <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="35"></circle><path d="M29 23v26l22-13z"></path></svg>
-              </button>
-              <div>
-                <span>Фрагмент реальной лекции</span>
-                <strong>Видео с Rutube подключим сюда</strong>
-              </div>
-            </div>
-            <div class="between-lessons">
-              <span>Между занятиями</span>
-              <ul>
-                <li>материалы для повторения;</li>
-                <li>самостоятельная практика;</li>
-                <li>помощь по возникшим вопросам;</li>
-                <li>возврат к ошибкам и пробникам.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="shell contact-grid">
-        <div class="contact-copy">
-          <p class="eyebrow">Первый шаг</p>
-          <h2>Сначала просто обсудим подготовку</h2>
-          <p>Оставьте контакт. Я свяжусь с вами, спрошу про текущий уровень и цель, расскажу, как проходит подготовка, и отвечу на вопросы.</p>
-
-          <div class="contact-note">
-            <strong>А дальше уже решим, нужен ли следующий шаг.</strong>
-            <span>Если формат подходит, можно бесплатно попробовать занятие.</span>
-          </div>
-        </div>
-
-        <div class="form-card" id="form-card">
-          <div class="form-card-head">
-            <span>Без обязательств</span>
-            <h3>С чего начать подготовку?</h3>
-          </div>
-
-          <form class="contact-form" data-demo-form>
-            <label>
-              <span>Как к вам обращаться</span>
-              <input type="text" name="name" autocomplete="name" placeholder="Имя" required />
-            </label>
-            <label>
-              <span>Телефон или Telegram</span>
-              <input type="text" name="contact" autocomplete="tel" placeholder="+7 … или @username" required />
-            </label>
-            <label>
-              <span>Класс ученика</span>
-              <select name="grade" required>
-                <option value="" selected disabled>Выберите</option>
-                <option>10 класс</option>
-                <option>11 класс</option>
-                <option>Другое</option>
-              </select>
-            </label>
-            <button class="button button--primary" type="submit">Обсудить подготовку</button>
-            <p class="form-legal">Демо-форма. Перед запуском рекламы подключим AlfaCRM и ссылки на документы.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div>
-        <strong>Дмитрий Маков</strong>
-        <span>Подготовка к ЕГЭ по информатике · онлайн</span>
-      </div>
-      <nav aria-label="Правовые документы">
-        <a href="#">Публичная оферта</a>
-        <a href="#">Политика обработки данных</a>
-        <a href="#">Согласие на обработку данных</a>
-      </nav>
     </div>
-  </footer>
+  </section>
 
-  <dialog class="contact-dialog" id="contact-dialog">
-    <button class="dialog-close" type="button" aria-label="Закрыть" data-close-dialog>×</button>
-    <div class="dialog-copy">
-      <p class="eyebrow">Обсудить подготовку</p>
-      <h2>Оставьте контакт</h2>
-      <p>Я свяжусь, узнаю текущий уровень и цель и отвечу на вопросы. Это не запись на урок.</p>
+  <section id="results">
+    <div class="inner">
+      <h2>Результаты учеников</h2>
+
+      <p>
+        Здесь показываем короткие кейсы без длинных историй.
+        Исходный уровень и сроки добавляем только там, где они подтверждены.
+      </p>
+
+      <div class="block">
+        <div class="item">
+          <h3>100 баллов</h3>
+          <p>ЕГЭ-2026. Подготовка с сентября до экзамена.</p>
+          <button class="button" type="button">Посмотреть подтверждение</button>
+        </div>
+
+        <div class="item">
+          <h3>90 баллов</h3>
+          <p>ЕГЭ-2026. Подготовка с сентября.</p>
+          <button class="button" type="button">Посмотреть подтверждение</button>
+        </div>
+
+        <div class="item">
+          <h3>81 балл — средний результат</h3>
+          <p>Средний балл учеников по итогам ЕГЭ-2026.</p>
+        </div>
+
+        <div class="item">
+          <h3>Преодоление порога</h3>
+          <p>Здесь будет реальный кейс ученика со слабой стартовой базой.</p>
+        </div>
+      </div>
+
+      <a class="button" href="#contact">Обсудить свою ситуацию</a>
     </div>
-    <form class="contact-form" data-demo-form>
-      <label>
-        <span>Как к вам обращаться</span>
-        <input type="text" name="name" autocomplete="name" placeholder="Имя" required />
-      </label>
-      <label>
-        <span>Телефон или Telegram</span>
-        <input type="text" name="contact" autocomplete="tel" placeholder="+7 … или @username" required />
-      </label>
-      <button class="button button--primary" type="submit">Отправить контакт</button>
-      <p class="form-legal">Демо-форма. Здесь будет интеграция AlfaCRM.</p>
-    </form>
-  </dialog>
+  </section>
 
-  <div class="toast" role="status" aria-live="polite" hidden>Демо: форма пока не отправляет данные.</div>
-  <script src="app.js"></script>
+  <section id="process">
+    <div class="inner">
+      <h2>Как проходят занятия</h2>
+
+      <p>
+        Основная логика подготовки: объяснение → самостоятельное решение →
+        помощь → разбор ошибок → повторение.
+      </p>
+
+      <ol>
+        <li>
+          <h3>Разбираем тему</h3>
+          <p>На понятных примерах и задачах ЕГЭ.</p>
+        </li>
+        <li>
+          <h3>Решаем самостоятельно</h3>
+          <p>После объяснения ученик пробует похожие задачи без подсказки.</p>
+        </li>
+        <li>
+          <h3>Помогаем между занятиями</h3>
+          <p>Если ученик застрял, вопрос можно разобрать до следующего занятия.</p>
+        </li>
+        <li>
+          <h3>Возвращаемся к ошибкам</h3>
+          <p>Домашние задания и пробники показывают, какие темы нужно повторить.</p>
+        </li>
+      </ol>
+
+      <div class="placeholder">Место для фрагмента реальной лекции с Rutube</div>
+
+      <p><strong>Между занятиями ученик получает:</strong></p>
+      <ul>
+        <li>материалы для повторения;</li>
+        <li>самостоятельную практику;</li>
+        <li>помощь по вопросам;</li>
+        <li>разбор ошибок и пробников.</li>
+      </ul>
+
+      <a class="button" href="#contact">Обсудить подготовку</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="inner">
+      <h2>Сначала просто обсудим подготовку</h2>
+
+      <p>
+        Оставьте контакт. Я свяжусь с вами, спрошу про текущий уровень и цель,
+        расскажу о занятиях и отвечу на вопросы.
+      </p>
+
+      <p>
+        Если формат подойдёт, после разговора можно бесплатно попробовать занятие.
+      </p>
+
+      <form>
+        <label>
+          Как к вам обращаться
+          <input type="text" name="name" placeholder="Имя">
+        </label>
+
+        <label>
+          Телефон или Telegram
+          <input type="text" name="contact" placeholder="+7 ... или @username">
+        </label>
+
+        <label>
+          Класс ученика
+          <select name="grade">
+            <option>10 класс</option>
+            <option>11 класс</option>
+            <option>Другое</option>
+          </select>
+        </label>
+
+        <button class="button" type="button">Обсудить подготовку</button>
+      </form>
+
+      <p><small>Позже здесь подключим форму AlfaCRM.</small></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <strong>Дмитрий Маков</strong>
+    <p>Подготовка к ЕГЭ по информатике · онлайн</p>
+    <p>
+      <a href="#">Публичная оферта</a> ·
+      <a href="#">Политика обработки данных</a> ·
+      <a href="#">Согласие на обработку данных</a>
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
